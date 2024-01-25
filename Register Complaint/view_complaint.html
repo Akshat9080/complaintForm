@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Complaint</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(207, 205, 205);
+    }
+
+    #complaintDetails{
+      max-width: 400px;
+      margin: 20px auto;
+      margin-top: 10%;
+      background-color: aliceblue;
+      padding: 25px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="complaintDetails">
+    <h2 style="color:rgb(82, 82, 219);">Complaint Details</h2>
+    <div id="desc">
+      <p><strong>ID:</strong> <span id="complaintId"></span></p>
+      <p><strong>Customer No.:</strong> <span id="cNum"></span></p>
+      <p><strong>Complaint:</strong> <span id="complaintText"></span></p>  
+    </div>
+  </div>
+
+  <script src="view.js">
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complaint Form</title>
+  <link rel="stylesheet" href="complaintstyle.css">
+</head>
+<body>
+  <div id="complaintbox">
+    <div id="head1">File New Complaint Form</div><br>
+     <div id="para1">Please fill out the following form with your<br> complaint.
+    We will review your request and follow<br> up with you as soon as possible.</div>
+  </div>
+  <form id="complaintForm">
+    <div id="main">
+      <div class="left-side">
+        <label for="first">Complaint/Service Type:</label>
+        <select id="first" onchange="updateSecondSelect()" >
+            <option value="billingIssues">Billing Issue</option>
+            <option value="depositIssues">Deposit Issue</option>
+            <option value="disconnectionnIssues">Disconnection Issue</option>
+            <option value="serviceIssues">Service Issue</option>
+        </select>
+        <br>
+        <br>
+        <label for="second">Category:</label>
+        <select id="second"></select>
+        <br>
+        <br>
+        <label for="contactPerson">Contact Person:</label>
+        <input type="text" placeholder="Contact Person">
+        <br>
+        <br>
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="tel" placeholder="Mobile Number">
+    </div>
+  
+      <div class="right-side">
+        <label for="landmark">Landmark:</label>
+        <input type="text" placeholder="Landmark">
+        <br>
+        <br>
+        <label for="consumerNumber">Consumer Number:</label>
+        <input type="number" id="cnum" placeholder="Enter 13 digit consumer number" required>
+        <br>
+        <br>
+        <label for="complaintDescription">Problem Description:</label>
+        <textarea id="complaint" rows="4" cols="50" placeholder="Enter your problem description"></textarea>
+        <br>
+        <br>
+        <label for="address">Address:</label>
+        <textarea id="address" rows="4" cols="50" placeholder="Enter your address"></textarea>
+    </div>
+    </div>
+    <div id="btns">
+      <button type="reset" id="btn1">Cancel</button>
+    <button type="button" onclick="submitForm()" id="btn2">Submit Complaint</button>
+    </div>
+    
+  </form>
+
+  <script src="complaintscript.js"></script>
+
+</body>
+</html>
